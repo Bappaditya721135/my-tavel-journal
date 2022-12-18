@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar component  */
+.navbar {
+    background-color: #f55a5a;
+    color: white;
+    /* height: 55px; */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar>p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* Destination Container wraper  */
+.destination-wraper {
+    max-width: 700px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+
+/* travel destination container  */
+.destination-container {
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+    "img info"
+    "img discription";
+}
+
+.disc {
+    grid-area: discription;
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+.destination-image {
+    height: 250px;
+    grid-area: img;
+}
+
+.country { 
+    margin-top: 20px;
+}
+
+.landmark {
+    margin: 15px 0;
+}
+
+.date {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.info {
+    grid-area: info;
+    padding-top: 20px;
+}
+
+.date {
+    white-space: nowrap;
+}
+
+
+
+
+@media(max-width: 580px) {
+
+    .destination-container {
+        grid-gap: 10px;
+    }
+    
+    .destination-image {
+        grid-area: 1/1/2/2;
+        height: 200px;
+    }
+
+    .info {
+        grid-area: 1/2/2/3;
+        padding-right: 50px;
+    }
+
+    .disc {
+        grid-area: 2/1/3/3;
+    }
+}
+
+
+@media(max-width: 470px) {
+    .destination-image {
+        height: 150px;
+    }
+}
