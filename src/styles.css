@@ -56,6 +56,14 @@
     margin-top: 20px;
 }
 
+.google-map {
+    color: #656363;
+    margin-left: 2rem;
+    text-underline-offset: 3px;
+    white-space: pre;
+    
+}
+
 .landmark {
     margin: 15px 0;
 }
@@ -90,7 +98,7 @@
 
     .info {
         grid-area: 1/2/2/3;
-        padding-right: 50px;
+        /* padding-right: 50px; */
     }
 
     .disc {
@@ -102,5 +110,10 @@
 @media(max-width: 470px) {
     .destination-image {
         height: 150px;
+    }
+
+    .google-map {
+        margin-left: 1rem;
+        background-color: lightblue;
     }
 }
